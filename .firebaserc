@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "prayerbook-3afd7": {
+      "hosting": {
+        "prayerbook": [
+          "prayerbook-3afd7"
+        ]
+      }
+    }
+  }
+}

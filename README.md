@@ -4,6 +4,23 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Create a file `src/env.js` with the contents:
+
+```
+window.APP_DATA = {
+  apiKey: 'xxxxx',
+  authDomain: 'xxxxx',
+  databaseURL: 'xxxxx',
+  projectId: 'xxxxx',
+  storageBucket: 'xxxxx',
+  messagingSenderId: 'xxxxx',
+  appId: 'xxxxx',
+  measurementId: 'xxxxx',
+};
+```
+
+Fill in the xxxxx placeholders with the values from the Firebase project you will be using for development cf [Firebase docs](https://firebase.google.com/docs/web/setup?authuser=0#add-sdks-initialize).  
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
