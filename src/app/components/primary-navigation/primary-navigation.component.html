@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <ng-container *ngIf="user$ | async as user">
+          <app-profile-card [user]="user" (logoutClick)="logout()">
+          </app-profile-card>
+        </ng-container>
+        <span class="spacer"></span>
+        <span>Prayer Book</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <ng-content></ng-content>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
